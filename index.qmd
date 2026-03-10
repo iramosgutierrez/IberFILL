@@ -17,7 +17,7 @@ library(leaflet)
 
 El objetivo principal de **IberFILL** es encontrar las zonas florísticamente peor muestreadas de la Península Ibérica, con el objetivo de mejorar el conocimiento que tenemos de ellas.
 
-Para ello, nos basamos en los datos de distribución del atlas [AFLIBER](https://iramosgutierrez.github.io/afliber/) que recopila información de distribución natural de todas las especies nativas ibéricas. Utilizando diferentes métricas podemos ver qué especies son más pobres en especies de lo que se cabría esperar, y por tanto, susceptibles de ser muestreadas.
+Para ello, nos basamos en los datos de distribución del atlas [AFLIBER](https://iramosgutierrez.github.io/afliber/) que recopila información de distribución natural de todas las especies nativas ibéricas. Utilizando diferentes métricas podemos ver qué regiones son más pobres en especies de lo que se cabría esperar, y por tanto, susceptibles de ser muestreadas.
 
 ## Busca las zonas menos exploradas
 
