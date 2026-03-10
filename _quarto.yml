@@ -9,9 +9,9 @@ website:
       - href: https://iramosgutierrez.github.io/afliber/
         text: AFLIBER website
       - href: https://doi.org/10.1111/geb.13363
-        text: publication
+        text: AFLIBER publication
       - href: https://afliber.shinyapps.io/afliber/
-        text: Search shinyapp
+        text: AFLIBER search shinyapp
   search: 
     location: navbar
     type: textbox

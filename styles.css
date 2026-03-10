@@ -5,7 +5,7 @@ h2 {
 }
 
 .navbar {
-    background-color: #339968; 
+    background-color: #D3EDB1; 
 }
 
 .navbar-nav {
@@ -14,22 +14,22 @@ h2 {
 }
 
 .navbar-brand, .navbar-nav .nav-link {
-    color: white !important; 
+    color: #057E05 !important; 
 }
 
 .navbar-brand:hover, .navbar-nav .nav-link:hover {
-    color: #8c1f85 !important; 
+    color: #98173C !important; 
 }
 
 /* Cambia el fondo de menu secundario */
 .dropdown-item:hover,
 .dropdown-item:focus {
-    background-color: #8c1f85 !important; 
-    color: white !important; 
+    background-color: #98173C !important; 
+    color: #057E05 !important; 
 }
 
 .dropdown-item {
-    color: #339968 !important; /* Color del texto */
+    color: #D3EDB1 !important; /* Color del texto */
     background-color: #e6f2e6 !important; /* Fondo  */
 }
 
