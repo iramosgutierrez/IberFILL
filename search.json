@@ -1,0 +1,30 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "IberFILL",
+    "section": "",
+    "text": "El objetivo principal de IberFILL es encontrar las zonas florísticamente peor muestreadas de la Península Ibérica, con el objetivo de mejorar el conocimiento que tenemos de ellas.\nPara ello, nos basamos en los datos de distribución del atlas AFLIBER que recopila información de distribución natural de todas las especies nativas ibéricas. Utilizando diferentes métricas podemos ver qué regiones son más pobres en especies de lo que se cabría esperar, y por tanto, susceptibles de ser muestreadas."
+  },
+  {
+    "objectID": "index.html#la-iniciativa-iberfill",
+    "href": "index.html#la-iniciativa-iberfill",
+    "title": "IberFILL",
+    "section": "",
+    "text": "El objetivo principal de IberFILL es encontrar las zonas florísticamente peor muestreadas de la Península Ibérica, con el objetivo de mejorar el conocimiento que tenemos de ellas.\nPara ello, nos basamos en los datos de distribución del atlas AFLIBER que recopila información de distribución natural de todas las especies nativas ibéricas. Utilizando diferentes métricas podemos ver qué regiones son más pobres en especies de lo que se cabría esperar, y por tanto, susceptibles de ser muestreadas."
+  },
+  {
+    "objectID": "index.html#busca-las-zonas-menos-exploradas",
+    "href": "index.html#busca-las-zonas-menos-exploradas",
+    "title": "IberFILL",
+    "section": "Busca las zonas menos exploradas",
+    "text": "Busca las zonas menos exploradas\nEn este mapa puedes ver cuáles son las zonas más ricas en especies, y cuáles de ellas tienen un peor conocimiento florístico del esperado en comparación con sus celdas vecinas.\n\n\nWarning: [plet] argument 'fill' will be removed. Use 'alpha' instead\n\n\n\n\n\n\nNota* . La información aquí mostrada se basa en los datos de AFLIBER v.2 (09/2025).\n\nrich: riqueza observada en AFLIBER (v.2)\ndiff: número de especies existentes en las celdas adyacentes que no están en la celda objetivo. Aquí la diferencia en nº de especies es independiente de las que haya (e.g. se espera que falten hasta 100 especies, da igual si la celda tiene 1 o 1000).\nratio: es el resultado de dividir diff / rich. El interés de este índice es ponderar el valor de especies que se puedan encontrar teniendo en cuenta que una zona pueda ser más pobre. Por ejemplo, encontrar 100 especies nuevas en Cazorla “es poca cosa” en comparación con hacerlo en un páramo de la meseta, ya que tienen muchas más de base.\nlogratio: es el logaritmo de la anterior. Su interés es más bien estético, porque la variable anterior tiene valores generalmente bajos, y no se distinguen bien los colores."
+  },
+  {
+    "objectID": "index.html#cómo-puedo-colaborar",
+    "href": "index.html#cómo-puedo-colaborar",
+    "title": "IberFILL",
+    "section": "¿Cómo puedo colaborar?",
+    "text": "¿Cómo puedo colaborar?\nDesde el Grupo de Trabajo de Corología de SEBOT estamos trabajando en realizar notas corológicas periódicas para documentar toda esta diversidad vegetal desconocida. Por ahora estamos trabajando en ello, pero si te intersa colaborar, ponte en contacto con nosotros a través de este correo."
+  }
+]
