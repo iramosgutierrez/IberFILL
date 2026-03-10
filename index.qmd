@@ -7,7 +7,7 @@ editor: visual
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 library(terra)
-library(tidyverse)
+# library(tidyverse)
 library(tidyterra)
 library(leaflet)
 
