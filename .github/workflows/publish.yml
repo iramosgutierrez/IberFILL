@@ -24,7 +24,7 @@ jobs:
       - name: Install packages
         uses: r-lib/actions/setup-r-dependencies@v2
         with:
-          packages: terra, leaflet, 
+          packages: terra, leaflet, tidyterra
           # dependencies: '"hard"'
           
       - name: Render and Publish
