@@ -23,7 +23,7 @@ Para ello, nos basamos en los datos de distribución del atlas [AFLIBER](https:/
 
 En este mapa puedes ver cuáles son las zonas más ricas en especies, y cuáles de ellas tienen un peor conocimiento florístico del esperado en comparación con sus celdas vecinas.
 
-```{r leafletmap, echo=FALSE}
+```{r leafletmap, echo=FALSE, message=FALSE, warning=FALSE}
 
 dissim.table <- read.csv("files/dissim.table.csv")
 grid.dissim3 <- vect("files/grid.dissim.shp")
