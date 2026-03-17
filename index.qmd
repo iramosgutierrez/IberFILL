@@ -25,9 +25,27 @@ En este mapa puedes ver cuáles son las zonas más ricas en especies, y cuáles 
 
 ```{r leafletmap, echo=FALSE, message=FALSE, warning=FALSE}
 
+grid <- vect("files/Iberian_Peninsula_10x10_Grid.shp")
 dissim.table <- read.csv("files/dissim.table.csv")
-grid.dissim3 <- vect("files/grid.dissim.shp")
 
+if(!file.exists("files/grid.dissim.shp")){ #kept to change surface threshold
+  
+dissim.table_area <- dissim.table |> 
+  mutate(area = sapply(grid.dissim$MGRS_10km, function(x){terra::expanse(grid.dissim[grid.dissim$MGRS_10km == x,])/1000000})) |> 
+  mutate(rich = n.taxa)
+  
+grid.dissim <- grid |> 
+  terra::merge(dissim.table_area)
+
+writeVector(grid.dissim, "files/grid.dissim.shp")
+
+}else{
+  grid.dissim <- vect("files/grid.dissim.shp")
+}
+
+grid.dissim3 <- filter(grid.dissim, area > 30)
+
+# grid.dissim3 <- vect("files/grid.dissim.shp")
 grid.dissim3$logratio <- log(grid.dissim3$ratio)
 grid.dissim3$logratio[grid.dissim3$logratio < -10] <- -3
 
