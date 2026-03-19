@@ -71,11 +71,37 @@ return(vect_col)
                   ratio    = spectral_pos(grid.dissim3$ratio),
                   logratio = spectral_pos(grid.dissim3$logratio))
   names(shapes) <- names(collist)
-  grid.lf <- plet(shapes,
+  
+  legend <- list(
+    richcols = colorNumeric( palette = spectral(100), domain = grid.dissim3$rich),
+    richvals = seq(from = floor(min(grid.dissim3$rich)), to = ceiling(max(grid.dissim3$rich)), length = 10),
+    
+    diffcols = colorNumeric( palette = spectral(100), domain = grid.dissim3$diff),
+    diffvals = seq(from = floor(min(grid.dissim3$diff)), to = ceiling(max(grid.dissim3$diff)), length = 10),
+    
+    ratiocols = colorNumeric( palette = spectral(100), domain = grid.dissim3$ratio),
+    ratiovals = seq(from = floor(min(grid.dissim3$ratio)), to = ceiling(max(grid.dissim3$ratio)), length = 10),
+    
+    logratiocols = colorNumeric( palette = spectral(100), domain = grid.dissim3$logratio),
+    logratiovals = seq(from = floor(min(grid.dissim3$logratio)), to = ceiling(max(grid.dissim3$logratio)), length = 10)
+    
+    
+  )
+
+  
+    grid.lf <- plet(shapes,
        tiles=c("Streets"),
        main=names(collist),
        border="transparent", col=collist, fill=0.75) |> 
-    hideGroup(c("rich", "diff", "ratio"))
+    
+
+    addLegend("bottomright", pal = legend$richcols, title="rich", values = legend$richvals,  group="rich") |> 
+    addLegend("bottomright", pal = legend$diffcols, title="diff", values = legend$diffvals,  group="diff") |>
+    addLegend("bottomright", pal = legend$ratiocols, title="ratio", values = legend$ratiovals,  group="ratio") |>
+    addLegend("bottomright", pal = legend$logratiocols, title="logratio", values = legend$logratiovals,  group="logratio") |>
+    
+    hideGroup(c("rich", "diff", "ratio")) 
+    
 
   grid.lf
 
